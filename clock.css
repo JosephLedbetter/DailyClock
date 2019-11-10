@@ -1,0 +1,21 @@
+#clock-holder{
+    background: black;
+    color: lime;
+    height: 400px;
+    width: 600px;
+    font-family: 'Contrail One', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    font-size: 60px;
+    width: 600px;
+    color: white;
+    font-family: 'Contrail One', cursive;
+    background: linear-gradient( #33cc33, black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

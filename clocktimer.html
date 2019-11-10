@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Running Clock</title>
+    <!-- font type -->
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One&display=swap" rel="stylesheet">
+    <!-- materialize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- custom css 'clock' specific -->
+    <link rel="stylesheet" href="clock.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <div id="title">Real Time Clock</div>
+        <div class="row center">
+            <div class="col12-md6">
+                <div id="clock-holder">
+                    <div><h2 id="holder">Hello!</h1></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- moment.js script -->
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
+
+    <!-- javascript to enter here -->
+    <!-- jQuery cdn -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+    const clock = $("#clock");
+
+
+        setInterval(() => {
+            const now = moment();
+            const humanReadable = now.format('hh:mm:ssA');
+            console.log(humanReadable)
+
+        $("#holder").text(humanReadable);
+
+        }, 1000);
+
+        
+        
+
+    
+    </script>
+    
+
+</body>
+</html> 
