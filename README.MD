@@ -12,5 +12,5 @@ the project it includes the jQuery CDN. <p>
 </ul>
 
 <h3> Active Link</h3>
-
+<p>https://josephledbetter.github.io/DailyClock/</p>
 <p>You will be met with the message "Hello!" and the clock will initiate shortly after reflecting the current time.</p>
